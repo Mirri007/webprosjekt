@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    position: relative;
+  }
+  
+  /* Background */
+  .marioBackgroundIMG {
+    width: 100%;
+  }
+  
+  /* ------ Characters + effects ------ */
+  
+  /* Toad */
+  .toadIMG {
+    position: absolute;
+    width: 6%;
+    top: 70.5%;
+    left: 8%;
+    animation: jump 1s ease-in-out infinite alternate;
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes jump {
+    from {
+      top: 70.5%;
+    }
+    to {
+      top: 60%;
+    }
+  }
+  
+  /* Hidden text */
+  .pToad {
+    display: none;
+    position: absolute;
+    border: solid 5px black;
+    background: black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20%;
+    top: 15%;
+    left: 2%;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+  
+  /* Hover MbToad + pToad */
+  .hoverMysteryBoxToad:hover + .pToad {
+    display: block;
+    color: white;
+  }
+  
+  /*--------------------------*/
+  
+  /* Bowser */
+  .bowserIMG {
+    position: absolute;
+    width: 20%;
+    top: 55.8%;
+    left: 18%;
+    animation: jump1 1s ease-in-out infinite alternate;
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes jump1 {
+    from {
+      top: 55.8%;
+    }
+    to {
+      top: 50.5%;
+    }
+  }
+  
+  /* Hidden text */
+  .pBowser {
+    display: none;
+    position: absolute;
+    border: solid 5px black;
+    background: black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20%;
+    top: 8%;
+    left: 18%;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+  
+  /* Hover MbBowser + pBowser */
+  .hoverMysteryBoxBowser:hover + .pBowser {
+    display: block;
+    color: white;
+  }
+  
+  /*--------------------------*/
+  
+  /* Luigi */
+  .luigiIMG {
+    position: absolute;
+    width: 8%;
+    top: 61%;
+    left: 41%;
+    animation: jump2 1s ease-in-out infinite alternate;
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes jump2 {
+    from {
+      top: 61%;
+    }
+    to {
+      top: 56%;
+    }
+  }
+  
+  /* Hidden text */
+  .pLuigi {
+    display: none;
+    position: absolute;
+    border: solid 5px black;
+    background: black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20%;
+    top: 4%;
+    left: 34%;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+  
+  /* Hover MbLuigi + pLuigi */
+  .hoverMysteryBoxLuigi:hover + .pLuigi {
+    display: block;
+    color: white;
+  }
+  
+  /*--------------------------*/
+  
+  /* Mario */
+  .marioIMG {
+    position: absolute;
+    width: 8%;
+    top: 65%;
+    left: 54%;
+    animation: jump3 1s ease-in-out infinite alternate;
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes jump3 {
+    from {
+      top: 65%;
+    }
+    to {
+      top: 60%;
+    }
+  }
+  
+  /* Hidden text */
+  .pMario {
+    display: none;
+    position: absolute;
+    border: solid 5px black;
+    background: black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20%;
+    top: 1%;
+    left: 47%;
+    font-size: 1.7vw;
+    font-weight: bold;
+  }
+  
+  /* Hover MbMario + pMario */
+  .hoverMysteryBoxMario:hover + .pMario {
+    display: block;
+    color: white;
+  }
+  
+  /*--------------------------*/
+  
+  /* Peach */
+  .peachIMG {
+    position: absolute;
+    width: 8.3%;
+    top: 60.5%;
+    left: 67%;
+    animation: jump4 1s ease-in-out infinite alternate;
+    animation-delay: 1s;
+  }
+  
+  @keyframes jump4 {
+    from {
+      top: 60.5%;
+    }
+    to {
+      top: 55.5%;
+    }
+  }
+  
+  /* Hidden text */
+  .pPeach {
+    display: none;
+    position: absolute;
+    border: solid 5px black;
+    background: black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20%;
+    top: 5%;
+    left: 60%;
+    font-size: 1.9vw;
+    font-weight: bold;
+  }
+  
+  /* Hover MbPeach + pPeach */
+  .hoverMysteryBoxPeach:hover + .pPeach {
+    display: block;
+    color: white;
+  }
+  
+  /*--------------------------*/
+  
+  /* Yoshi */
+  .yoshiIMG {
+    position: absolute;
+    width: 10%;
+    top: 63%;
+    left: 80%;
+    animation: jump5 1s ease-in-out infinite alternate;
+    animation-delay: 1.2s;
+  }
+  @keyframes jump5 {
+    from {
+      top: 63%;
+    }
+    to {
+      top: 58%;
+    }
+  }
+  
+  /* Hidden text */
+  .pYoshi {
+    display: none;
+    position: absolute;
+    border: solid 5px black;
+    background: black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 20%;
+    top: 6%;
+    left: 75%;
+    font-size: 1.6vw;
+    font-weight: bold;
+  }
+  
+  /* Hover MbYoshi + pYoshi */
+  .hoverMysteryBoxYoshi:hover + .pYoshi {
+    display: block;
+    color: white;
+  }
+  
+  /* ------- Cloud Turtle ----------*/
+  
+  /* IMAGE Cloud Turtle */
+  .cloudTurtleIMG {
+    position: absolute;
+    width: 8%;
+    top: 10%;
+    left: 22%;
+    animation: ease-in-out linear infinite;
+    animation-name: back-and-forth;
+    animation-duration: 25s;
+    z-index: 1;
+  }
+  
+  /* Animation Cloud Turtle */
+  @keyframes back-and-forth {
+    0% {
+        left: 0;
+      }
+      48% {
+        transform: rotateY(0deg); 
+      }
+      50% { 
+        left: calc(92%);
+        transform: rotateY(180deg); 
+      }
+      98% {
+        transform: rotateY(180deg); 
+      }
+      100% {
+        left: 0;    
+        transform: rotateY(0deg);
+      }
+    }
+  
+  /* ------- Mystery Boxes -------- */
+  
+  .mysteryBoxToad {
+    position: absolute;
+    width: 6%;
+    top: 42%;
+    left: 7.5%;
+  }
+  
+  .mysteryBoxBowser {
+    position: absolute;
+    width: 6%;
+    top: 42%;
+    left: 25%;
+  }
+  
+  .mysteryBoxLuigi {
+    position: absolute;
+    width: 6%;
+    top: 42%;
+    left: 42%;
+  }
+  
+  .mysteryBoxMario {
+    position: absolute;
+    width: 6%;
+    top: 42%;
+    left: 55%;
+  }
+  
+  .mysteryBoxPeach {
+    position: absolute;
+    width: 6%;
+    top: 42%;
+    left: 68%;
+  }
+  
+  .mysteryBoxYoshi {
+    position: absolute;
+    width: 6%;
+    top: 42%;
+    left: 83%;
+  }
+  

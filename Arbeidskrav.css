@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+/* IMAGE Background */
+.backgroundIMG {
+    width: 100%;
+}
+
+/* Censored Box - Mario and Peach */
+.censoredBox1 {
+    position: absolute;
+    top: 83.5%;
+    left: 15.5%;
+    height: 6%;
+    width: 10%;
+    background: black; 
+}
+
+/* Text in Censored Box - Mario and Peach */
+#censoredText1 {
+    font-size: 1.5vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Censored Box - Yoshi and Luigi */
+.censoredBox2 {
+    position: absolute;
+    top: 79.5%;
+    left: 38%;
+    height: 5%;
+    width: 6.2%;
+    background: black; 
+}
+
+/* Text In Censored Box - Yoshi and Luigi */
+#censoredText2 {
+    font-size: 1vw; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Hidden text Censored Box - Mario/Peach + Luigi/Yoshi */
+.hiddenTextCensoredBox {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 28%;
+    font-size: 7vw;
+}
+  
+/* Hover Censored Box + Hidden text Censored Box - Mario/Peach + Luigi/Yoshi */
+.hoverCensoredBox:hover + .hiddenTextCensoredBox {
+    display: block;
+    color: black;
+}
+
+/* IMAGE Super Mario Logo */
+.logoIMG {
+    position: absolute;
+    width: 31%;
+    top: 2%;
+    left: 13.7%;
+    transition: transform 0.4s;
+    animation: big-small 1s ease-in-out infinite alternate;
+}
+
+/* Super Mario Logo Animation */ 
+@keyframes big-small {
+    from {
+        transform:scale(1)
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+/* IMAGE Mario */
+.superMarioIMG {
+    position: absolute;
+    width: 8.5%;
+    top: 72.5%;
+    left: 19%;
+    animation: in-and-out 0.2s ease-in-out infinite alternate;
+}
+
+/* Animation Mario */
+@keyframes in-and-out {
+    from {
+        left: 19%;
+    }
+    to{
+        left: 20%;
+    }
+}
+
+/* IMAGE Princess Peach */
+.peachIMG {
+    position: absolute;
+    width: 11%;
+    top: 69.3%;
+    left: 14.2%;
+    animation: moving 0.2s ease-in-out infinite alternate;
+    animation-delay: 0.2s; 
+}
+
+/* Animation Princess Peach */
+@keyframes moving {
+    from {
+        left: 14%;
+    }
+    to{
+        left: 14.5%;
+    }
+}
+
+/* IMAGE Luigi and Yoshi */
+.luigiYoshiIMG {
+    position: absolute;
+    width: 15%;
+    top: 59%;
+    left: 32%;
+}
+
+/* IMAGE Bowser */
+.bowserIMG {
+    position: absolute;
+    width: 6%;
+    top: 30.5%;
+    left: 72%;
+}
+
+/* Hidden text Bowser */
+.hiddenTextBowser {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    font-size: 3vw;
+    font-weight: bold;
+}
+  
+/* HOVER Bowser + Hidden text Bowser */
+.hoverBowser:hover + .hiddenTextBowser {
+    display: block;
+    color: black;
+}
+
+/* IMAGE Ghost */
+.ghostIMG {
+    position: absolute;
+    width: 8%;
+    top: 67%;
+    left: 2%;
+}
+
+/* Hidden text Ghost */
+.hiddenTextGhost {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    font-size: 3vw;
+    font-weight: bold;
+}
+  
+/* HOVER Ghost + Hidden Text Ghost */
+.hoverGhost:hover + .hiddenTextGhost {
+    display: block;
+    color: black;
+}
+
+/* IMAGE Green Shell */
+.greenShellIMG {
+    position: absolute;
+    width: 5% ;
+    top: 83.2%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    animation: side-to-side 1s ease-in-out infinite alternate;
+}
+
+/* Animation Green Shell */
+@keyframes side-to-side {
+    from {
+        left: 87%;
+    }
+    to{
+        left: 97%;
+    }
+}
+
+/* GIF Plant */
+.plantIMG {
+    position: absolute;
+    width: 9%;
+    top: 62.2%;
+    left: 56.2%;
+}
+
+/* IMAGE Warp pipe */
+.warpPipeIMG {
+    position: absolute;
+    width: 9.2%;
+    top: 79.36%;
+    left: 56%;
+}
+
+/* IMAGE Cloud Turtle */
+.cloudTurtleIMG {
+    position: absolute;
+    width: 8%;
+    top: 23%;
+    left: 22%;
+    animation: ease-in-out linear infinite;
+    animation-name: back-and-forth;
+    animation-duration: 20s;
+    z-index: 1;
+}
+
+/* Animation Cloud Turtle */
+@keyframes back-and-forth {
+    0% {
+        left: 0;
+      }
+      48% {
+        transform: rotateY(0deg); 
+      }
+      50% { 
+        left: calc(92%);
+        transform: rotateY(180deg); 
+      }
+      98% {
+        transform: rotateY(180deg); 
+      }
+      100% {
+        left: 0;    
+        transform: rotateY(0deg);
+      }
+    }
+
+/* IMAGE Brick 1 */
+.brick1IMG {
+    position: absolute;
+    width: 6%;
+    top: 69.5%;
+    left: 68.6%;
+}
+
+/* IMAGE Brick 2 */
+.brick2IMG {
+    position: absolute;
+    width: 6%;
+    top: 69.5%;
+    left: 73.55%;
+}
+
+/* IMAGE Toad */
+.toadIMG {
+    position: absolute;
+    width: 5%;
+    top: 82.3%;
+    left: 50%;
+}
+
+/* IMAGE Red Turtle */
+.redTurtle {
+    position: absolute;
+    width: 11.5%;
+    top: 51.9%;
+    left: 65%;
+}
+
+/* IMAGE Mystery Box */
+.mysteryBoxIMG {
+    position: absolute;
+    width: 6%;
+    top: 42%;
+    left: 23%;
+}
+
+/* IMAGE Hoover */ 
+.hiddenElement {
+    position: absolute;
+    z-index: 1;
+    width: 200%;
+}
+
+/* Text Mystery Box */
+.hiddenTextMysteryBox {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 16%;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+/* HOVER Mystery Box + Mystert Box Text */
+.hoverMysteryBox:hover + .hiddenTextMysteryBox{
+    display: block;
+    color: black;
+}
+
+
+/* Continue button position  */
+.continueButton {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+/* Continue button styling + Button */
+.textInButton {
+    border: solid black 4px;
+    border-radius: 1vw;
+    width: 18vw;
+    height: 6vw;
+    font-size: 1.4vw;
+    font-weight: bold;
+    font-family: "Lucida Console";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: red;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow:.1vw .1vw .0vw .0vw, .2vw .2vw .0vw .0vw, .3vw .3vw .0vw .0vw, .4vw .4vw .0vw .0vw, .5vw .5vw .0vw .0vw;
+}
+
+
+/* Continue button Hover */ 
+.textInButton:hover {
+    transform: scale(1.2);
+    background: green;}
